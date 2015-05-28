@@ -1,0 +1,35 @@
+{
+	"port": 8777,
+	"protocol": "http",
+	"host": "localhost",
+	"logfile": null,
+	"level": "debug",
+
+	"default_chat_user": "integrations",
+	"default_chat_channel": "#integrations",
+
+	"publishers": [
+		{	
+			"name": "jira",
+			"chat_user": "jira",
+			"chat_channel": "#jira",
+			"include": ["summary", "priority"]
+		}
+	],
+	"listeners": [
+		{	
+			"name": "slack",
+			"host": "hooks.slack.com",
+			"hook_url": "/services/T048LHZ5M/B04D5P35F/keqZ5Crpyx9sL3eXdBMPFD7",
+			"user": null,
+			"channel": null
+		},
+		{	
+			"name": "papertrail",
+			"level": "info",
+			"host": "logs.papertrailapp.com",
+			"port": 2910,
+			"hostname": "webhook-proxy"
+		}
+	]
+}

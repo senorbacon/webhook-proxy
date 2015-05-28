@@ -1,0 +1,22 @@
+{
+  "name": "webhook-proxy",
+  "version": "1.0.0",
+  "description": "Extensible webhook proxy to broadcast events from various publishers (e.g. Stripe, Jira, Zendesk) to listeners (e.g. Slack, PaperTrail, Mailgun)",
+  "main": "webhook-proxy.js",
+  "dependencies": {
+    "concat-stream": "^1.4.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "events",
+    "chat",
+    "jira",
+    "slack",
+    "logging"
+  ],
+  "author": "Terren Suydam",
+  "license": "ISC"
+}
